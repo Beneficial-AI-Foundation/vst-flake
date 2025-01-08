@@ -1,0 +1,4 @@
+-R _build/default/code Fib
+-R _build/default/theories FibVerif
+-arg -w -arg -notation-overridden
+-arg -w -arg -redundant-canonical-projection

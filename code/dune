@@ -1,0 +1,11 @@
+(rule
+ (targets fib.v)
+ (deps fib.c)
+ (action
+  (run clightgen %{deps} -o %{targets})))
+
+(coq.theory
+ (name Fib)
+ (modules fib)
+ (theories VST compcert Flocq)
+ (flags :standard))

@@ -1,0 +1,10 @@
+(coq.theory
+ (name FibVerif)
+ (synopsis "Fibonacci example")
+ (theories VST compcert Flocq Ltac2)
+ (modules verif_fib)
+ (flags :standard -R ../code Fib))
+
+(alias
+ (name all)
+ (deps ../code/fib.v))

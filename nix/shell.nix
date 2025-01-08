@@ -5,8 +5,11 @@
         coq
         coq-lsp
         VST
+        flocq
+        # ltac2
         # pkgs.compcert
         pkgs.dune_3
+        pkgs.ocaml
       ];
       greeting = "Verified Software Toolchain";
       shellHook = "echo ${greeting}";
